@@ -1,0 +1,10 @@
+#clone a repository
+	docker run --name repo alpine/git clone https://github.com/docker/getting-started.git
+#build the image
+	cd getting-started
+	docker build -t docker101tutorial .
+#Run your first container
+	docker run -d -p 80:80 \ --name docker-tutorial docker101tutorial
+#save and share your image
+	docker tag docker101tutorial DockerID/docker101tutorial
+	docker push DockerID/docker101tutorial
