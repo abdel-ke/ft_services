@@ -13,3 +13,11 @@
 #save and share your image
 	docker tag docker101tutorial DockerID/docker101tutorial
 	docker push DockerID/docker101tutorial
+
+
+
+==> AFFICHE image
+		docker images
+==> SHOW CONTAINER
+		docker ps
+	CONTAINER
