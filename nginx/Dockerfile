@@ -8,7 +8,7 @@ RUN adduser -D -g 'www' www
 RUN mkdir /www \
 	&& chown -R www:www /var/lib/nginx \
 	&& chown -R www:www /www \
-	&& openrc && touch /run/openrc/softlevel
+	&& openrc && rc-status && touch /run/openrc/softlevel
 #Configuration
 RUN mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.orig
 COPY src /tmp
